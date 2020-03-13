@@ -87,9 +87,4 @@ for (i in 1:P,){
     K(:,i) <- K(:,i)/sum(K(:,i))*Np/N
 }
 
-#plot decomposition and kernel of all data
-plot(grid,K(:,1))
-hold
-area(grid,K(:,2:P))
-
 }
