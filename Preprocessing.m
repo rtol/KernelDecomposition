@@ -1,19 +1,12 @@
 %% Preprocessing data
 %
 % First version: Richard Tol, 1 November 2011
-% This version: Richard Tol, 1 March 2020
+% This version: Richard Tol, 27 March 2021
 
 display('Preprocess data');
 
 %
 NEstimates = length(SCC);
-
-%add the missing observations at the start of the growth column
-vN = length(Growth);
-vGrowth = zeros(NEstimates,1);
-vGrowth(NEstimates-vN+1:NEstimates) = Growth;
-vGrowth(vGrowth==0) = NaN;
-Growth = vGrowth;
 
 % age
 Oldest = min(Year);
