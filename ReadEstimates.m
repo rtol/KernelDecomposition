@@ -1,16 +1,16 @@
 %% ReadEstimates - Reads estimates of social cost of carbon and study characteristics
 %
 % First version: Richard Tol, 1 November 2011
-% This version: Richard Tol, 10 April 2021
+% This version: Richard Tol, 11 April 2021
 
 display('Read data');
 
 vFileToOpen = 'socialcostcarbon.xlsx';
 %data
 SCC = xlsread(vFileToOpen, 'Data', 'L9:L5780');
-Growth = xlsread(vFileToOpen, 'Growth', 'H9:H5780');
+Growth = xlsread(vFileToOpen, 'Growth', 'G9:G5780');
 %study characteristics
-GWeight = xlsread(vFileToOpen, 'Growth', 'E9:E5780');
+GWeight = xlsread(vFileToOpen, 'Growth', 'D9:D5780');
 Year = xlsread(vFileToOpen, 'Data', 'D9:D5780');
 Censor = xlsread(vFileToOpen, 'Data', 'H9:H5780');
 PaperWeight = xlsread(vFileToOpen, 'Data', 'K9:K5780');
