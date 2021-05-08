@@ -1,25 +1,22 @@
 %% Construct PDF
 %
 % First version: Richard Tol, 2 November 2011
-% This version: Richard Tol, 4 March 2020
+% This version: Richard Tol, 29 March 2021
 
 display('Construct joint PDF');
-
-distpos = 'weibull'; %normal gamma lognormal gumbel weibull=default
-distneg = 'gumbel'; %normal gumbel=default
-Silverman = false;
-nosplit = false;
 
 global M
 global V
 
 SCCgrid(1)= -500;
 NGrid = 8111; %210500 for unrestricted
-for i=1:NGrid-1,
+for i=1:NGrid-1
     SCCgrid(i+1)=SCCgrid(i)+1;
 end
 
 vkernel = zeros(NGrid,NEstimates);
+
+figure
 
 for j=1:NFilter,
     display(j)
@@ -110,6 +107,7 @@ for j=1:NFilter,
     plot(SCCgrid,JointPDF(:,j))
     title(Titles{j})
 end
+
 JointCDF=zeros(NGrid,NFilter);
 JointCDF(1,:)=JointPDF(1,:);
 for i=2:NGrid,

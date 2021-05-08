@@ -1,6 +1,9 @@
 clear all
 ReadEstimates
 Preprocessing
-ConstructPDF
+ConstructPDFs
 ConstructPDFgrowth
-Decomposede
+Decompose
+KStests
+Characteristics
+%bootstrap %only do this if you must and have time on your hands
