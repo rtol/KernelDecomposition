@@ -5,6 +5,8 @@ There are two functions, KernelDecompostion.m and DecompositionTest.m, that cons
 
 There are also a bunch of scripts necessary to reproduce the [paper](https://ideas.repec.org/p/sus/susewp/0720.html) that details the methods. These should be run in the order of ReadEstimates.m, Preprocessing.m, ConstructPDF.m, ConstructPDFgrowth.m, Decompose.m. Or run KernelWrapper.m. The data are in the Excel spreadsheet.
 
+Results are written to LaTeX using https://uk.mathworks.com/matlabcentral/fileexchange/4894-matrix2latex
+
 The bootstrap will run but its graph will not without https://uk.mathworks.com/matlabcentral/fileexchange/13188-shade-area-between-two-curves
 
 The Kolmogorov-Smirnov test requires https://uk.mathworks.com/matlabcentral/fileexchange/4369-kolmogorov-distribution-functions
