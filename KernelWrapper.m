@@ -2,7 +2,10 @@ clear all
 ReadEstimates
 Preprocessing
 ConstructPDFs
+ConstructHistogram
 ConstructPDFgrowth
+
+%%
 Decompose
 KStests
 Characteristics

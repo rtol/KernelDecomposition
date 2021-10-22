@@ -9,6 +9,7 @@ function [ks,p] = ksdtest(testcdf,targetcdf,res)
 %
 %ks is the test-statistic, p its p-value
 %
+%first version, Richard Tol, 25 April 2021
 %this version, Richard Tol, 8 May 2021
 
 for j=1:res,
